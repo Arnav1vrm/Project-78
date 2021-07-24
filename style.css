@@ -1,0 +1,17 @@
+body {
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   word-spacing: 20%;
+}
+
+.heading my family {
+   font-size: 50%; 
+}
+
+.btn {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%); 
+}

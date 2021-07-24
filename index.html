@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>
+        Project-78
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="heading my family">My Family Book</h1>
+<img src="https://c8.alamy.com/comp/W4DXWH/family-single-parent-with-children-cartoon-W4DXWH.jpg" style="width: 30%;" id="family_member_image">
+
+<div class="box">
+<div class="button">
+    <h4 id="family_member_name">Diljeet Singh</h4>
+    <button type="button" onclick="update();">Next</button>
+   </div>
+</div>
+   </body>
+   <script>
+var images = ["https://www.pngitem.com/pimgs/m/120-1203252_clip-art-mom-png-for-mother-cartoon-png.png","https://thumbs.dreamstime.com/b/high-quality-vector-animated-office-man-who-very-handsome-authoritative-high-quality-vector-animated-office-man-who-very-199082397.jpg","https://i.pinimg.com/564x/9d/31/ce/9d31cea72bb5771f3c64ba17cf0caa7a.jpg","https://media.istockphoto.com/videos/young-man-cartoon-hd-animation-video-id1030543114?s=640x640"];
+ var names = ["Ranbir Singh","Diljeet Singh","Rocky Singh","Alia Singh","Soni Singh"]
+
+ var i = 0;
+ function update()
+ {
+     i++;
+     var numbers_of_family_of_members_in_array = 5
+     if(i > numbers_of_family_of_members_in_array)
+     {
+         i = 0;
+     }
+     
+     var updatedImage = images[i];
+     var updatedName = names[i];
+     document.getElementById("family_member_image").src = updatedImage;
+     document.getElementById("family_member_name").innerHTML = updatedName;
+ }
+   </script>
+</html> 
